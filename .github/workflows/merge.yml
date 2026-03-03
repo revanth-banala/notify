@@ -52,12 +52,7 @@ jobs:
       db_user: appproxy
       atomic: true
       tag: ${{ inputs.tag }}
-      params: >-
-        --set frontend.enabled=false
-        --set crunchy.enabled=false
-        --set backend.migrations.enabled=false
-        --set global.secrets.enabled=false
-        --set global.secrets.persist=false
+      params: --set frontend.enabled=false --set crunchy.enabled=false --set backend.migrations.enabled=false --set global.secrets.enabled=false --set global.secrets.persist=false
 
   # deploy-prod:
   #   name: Deploy (PROD)
