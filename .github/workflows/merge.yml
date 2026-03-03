@@ -41,7 +41,7 @@ jobs:
     with:
       target: dev
 
-  # Deploy to test after successful dev deployment
+  # Deploy to test only after successful dev deployment
   deploy-test:
     name: Deploy (TEST)
     needs: [deploy-dev]
